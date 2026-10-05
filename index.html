@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>O. Arabi — استوديو تصميم بوسترات وهويات بصرية</title>
+<meta name="description" content="O.Arabi استوديو تصميم بوسترات إعلانية، هويات بصرية، سوشيال ميديا ومواقع إلكترونية. شاهد الأعمال ومجموعات VIP.">
+<meta name="theme-color" content="#0a0808">
+<link rel="icon" href="assets/icon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="O. Arabi — استوديو تصميم">
+<meta property="og:description" content="بوسترات إعلانية، هويات بصرية، سوشيال ميديا ومواقع إلكترونية.">
+<meta property="og:image" content="assets/icon-512.png">
+<meta property="og:locale" content="ar_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/extras.css">
+<link rel="manifest" href="manifest.webmanifest">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"O. Arabi","description":"استوديو تصميم بوسترات إعلانية وهويات بصرية وسوشيال ميديا ومواقع إلكترونية.","sameAs":["https://www.instagram.com/o.arabi_"]}</script>
+
+</head>
+<body class="is-loading">
+
+<!-- Preloader -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-in">
+    <img src="assets/logo-mark.png" alt="" class="loader-logo">
+    <div class="loader-word">O. ARABI</div>
+    <div class="loader-bar"><i id="loaderBar"></i></div>
+    <div class="loader-num"><span id="loaderNum">0</span>%</div>
+  </div>
+</div>
+
+<canvas id="stars" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span id="cursorLabel"></span></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+<!-- Page transition -->
+<div class="curtain" id="curtain" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <a href="#/" class="brand" aria-label="O. Arabi — الرئيسية">
+    <img src="assets/logo-mark.png" alt="" width="44" height="40">
+    <span>O. ARABI</span>
+  </a>
+  <nav class="nav-links" id="navLinks" aria-label="التنقل الرئيسي">
+    <a href="#/" data-route="">الرئيسية</a>
+    <a href="#/works" data-route="works">الأعمال</a>
+    <a href="#/collections" data-route="collections">المجموعات</a>
+    <a href="#/collab" data-route="collab">التعاون</a>
+    <a href="#/services" data-route="services">الخدمات</a>
+    <a href="#/studio" data-route="studio">الاستوديو</a>
+    <i class="nav-ink" id="navInk"></i>
+  </nav>
+  <a href="#/contact" class="btn btn-sm nav-cta" data-magnet>ابدأ مشروعك</a>
+  <button class="burger" id="burger" aria-label="القائمة" aria-expanded="false"><i></i><i></i></button>
+</header>
+
+<!-- Full-screen menu (mobile) -->
+<div class="menu" id="menu" aria-hidden="true">
+  <nav class="menu-links">
+    <a href="#/" data-route="">الرئيسية<small>01</small></a>
+    <a href="#/works" data-route="works">الأعمال<small>02</small></a>
+    <a href="#/collections" data-route="collections">المجموعات<small>03</small></a>
+    <a href="#/collab" data-route="collab">التعاون<small>04</small></a>
+    <a href="#/services" data-route="services">الخدمات<small>05</small></a>
+    <a href="#/studio" data-route="studio">الاستوديو<small>06</small></a>
+    <a href="#/contact" data-route="contact">تواصل<small>07</small></a>
+  </nav>
+  <div class="menu-foot">
+    <a href="https://www.instagram.com/o.arabi_" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://wa.me/201116899653" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</div>
+
+<main id="view" tabindex="-1"></main>
+
+<!-- زرار واتساب ثابت -->
+<a class="wa-fab" id="waFab" href="https://wa.me/201116899653" target="_blank" rel="noopener" aria-label="اطلب تصميمك على واتساب" data-cursor="واتساب">
+  <svg viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h22a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H15l-6 5v-5H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M9 11h14M9 16h9"/></svg>
+  <span>اطلب تصميمك</span>
+</a>
+
+<!-- Lightbox -->
+<div class="lb" id="lb" aria-hidden="true" role="dialog" aria-label="عرض التصميم">
+  <div class="lb-bg"></div>
+  <button class="lb-x" id="lbClose" aria-label="إغلاق">✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="السابق">›</button>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="التالي">‹</button>
+  <figure class="lb-fig" id="lbFig">
+    <img id="lbImg" alt="">
+    <figcaption><b id="lbTitle"></b><span id="lbSub"></span><em id="lbCount"></em></figcaption>
+  </figure>
+</div>
+
+<noscript><p style="padding:40px;text-align:center">الموقع محتاج JavaScript عشان يشتغل.</p></noscript>
+
+<script src="js/local.js"></script>
+<script src="js/data.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/app.js"></script>
+<script src="js/extras.js"></script>
+</body>
+</html>
